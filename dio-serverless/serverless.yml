@@ -27,6 +27,20 @@ functions:
           path: /
           method: get
 
+  insertItem:
+    handler: src/insertItem.handler
+    events:
+      - http:
+          path: /item 
+          method: post
+  fechItems:
+    handler: src/fechItems.handler
+    events:
+      - http:
+          path: /item
+          method: get
+
+
 
 resources:
   Resources:
