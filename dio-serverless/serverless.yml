@@ -39,7 +39,18 @@ functions:
       - http:
           path: /item
           method: get
-
+  fechItem:
+    handler: src/fechItem.handler
+    events:
+      - http:
+          path: /items/{id}
+          method: get
+  updateItem:
+    handler: src/updateItem.handler
+    events:
+      - http:
+          path: /items/{id}
+          method: put
 
 
 resources:
